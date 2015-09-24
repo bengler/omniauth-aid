@@ -1,6 +1,6 @@
 require 'omniauth/strategies/oauth2'
 
-module Omniauth
+module OmniAuth
   module Strategies
     class Aid  < OmniAuth::Strategies::OAuth2
       # change the class name and the :name option to match your application name
