@@ -50,3 +50,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do
            :scope => 'name, birth_date, email',
 end
 ```
+
+## Test-driving the gem
+A simple way to test if the aID-strategy is working is to install the [Omniauth-test-harness rails app](https://github.com/PracticallyGreen/omniauth-test-harness) and provide it with the scopes and app-configuration provided for using aID as an Omniauth-provider.
