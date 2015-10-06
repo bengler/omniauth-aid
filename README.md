@@ -38,16 +38,14 @@ You can configure several options, which you pass in to the `provider` method vi
 
 Option name | Default | Explanation
 --- | --- | ---
-`scope` | `email` | A comma-separated list of permissions you want to request from the user. See the Facebook docs for a full list of available permissions: https://developers.facebook.com/docs/reference/login/
-`image_size` | `square` | Set the size for the returned image url in the auth hash. Valid options include `square` (50x50), `small` (50 pixels wide, variable height), `normal` (100 pixels wide, variable height), or `large` (about 200 pixels wide, variable height). Additionally, you can request a picture of a specific size by setting this option to a hash with `:width` and `:height` as keys. This will return an available profile picture closest to the requested size and requested aspect ratio. If only `:width` or `:height` is specified, we will return a picture whose width or height is closest to the requested size, respectively.
-
+`scope` | `id`, `name` | A comma-separated list of permissions you want to request from the user. Optional scopes are: `email`, `phone`, `birth_date`, `user_key`, `access`, `external_accounts`, `customer`
 
 For example, to request `name`, `birth_date` and `email` permissions and display the authentication page:
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :aid, ENV[AID_APP_KEY'], ENV[AID_APP_SECRET'],
-           :scope => 'name, birth_date, email',
+           :scope => 'name, birth_date, email'
 end
 ```
 
