@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jonas Helgemo"]
   spec.email         = ["jonas.helgemo@gmail.com"]
 
-  spec.summary       = %q{Omniauth-strategy for using aID as an id-provider}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-
+  spec.summary       = %q{Omniauth-strategy for using aID as an OAuth2-provider}
+  spec.homepage      = "https://github.com/amedia/omniauth-aid"
+  spec.licenses    = ['MIT']
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)

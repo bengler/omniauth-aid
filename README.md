@@ -34,18 +34,18 @@ For using the strategy with a straight up rack app, look at the [example Sinatra
 
 ## Configuring
 
-You can configure several options, which you pass in to the `provider` method via a `Hash`:
+You can configure several options, which you pass in to the `provider` method via a `Option`:
 
-Option name | Default | Explanation
+Hash name | Default | Explanation
 --- | --- | ---
-`scope` | `id`, `name` | A comma-separated list of permissions you want to request from the user. Optional scopes are: `email`, `phone`, `birth_date`, `user_key`, `access`, `external_accounts`, `customer`
+`scope` | `id`, `name` | A space-separated list of permissions you want to request from the user. Optional scopes are: `email`, `phone`, `birth_date`, `user_key`, `access`, `external_accounts`, `customer`
 
 For example, to request `name`, `birth_date` and `email` permissions and display the authentication page:
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :aid, ENV[AID_APP_KEY'], ENV[AID_APP_SECRET'],
-           :scope => 'name, birth_date, email'
+           :scope => 'name birth_date email'
 end
 ```
 
