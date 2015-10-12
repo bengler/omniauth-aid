@@ -38,7 +38,7 @@ You can configure several options, which you pass in to the `provider` method vi
 
 Hash name | Default | Explanation
 --- | --- | ---
-`scope`, `name` | A space-separated list of permissions you want to request from the user. Optional scopes are: `email`, `phone`, `birth_date`, `tracking_key`, `access`, `external_accounts`, `customer`, `avatar`
+`scope` | `id name` | A space-separated list of permissions you want to request from the user. Optional scopes are: `email`, `phone`, `birth_date`, `tracking_key`, `access`, `external_accounts`, `customer`, `avatar`
 
 For example, to request `name`, `birth_date` and `email` permissions and display the authentication page:
 
