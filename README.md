@@ -44,7 +44,7 @@ For example, to request `name`, `birth_date` and `email` permissions and display
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :aid, ENV[AID_APP_KEY'], ENV[AID_APP_SECRET'],
+  provider :aid, ENV['AID_APP_KEY'], ENV['AID_APP_SECRET'],
            :scope => 'name birth_date email'
 end
 ```
