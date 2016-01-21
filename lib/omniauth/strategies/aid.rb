@@ -20,6 +20,7 @@ module OmniAuth
                'uuid' => raw_info['uuid'],
                'nickname' => raw_info['name'],
                'email' => raw_info['email'],
+               'phone' => raw_info['phone'],
                'name' => raw_info['name'],
                'image' => raw_info
                          .fetch('_links') { {} }
