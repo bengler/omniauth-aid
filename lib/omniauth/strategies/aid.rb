@@ -13,7 +13,7 @@ module OmniAuth
              authorize_url: '/api/portunus/v1/oauth/authorize',
              token_url: '/api/portunus/v1/oauth/token'
 
-      uid { raw_info['uuid'] || raw_info['id'] }
+      uid { raw_info['id'] || raw_info['uuid'] }
 
       info do
         prune!('id' => raw_info['id'],
