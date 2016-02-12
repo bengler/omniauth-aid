@@ -5,6 +5,8 @@ Stack: Ruby
 ---
 <!--(Maintained Duplo labels above. Read more on http://info.api.no/handbook/guidelines/GitHub-guidelines.html)-->
 
+<!--(Maintained Duplo labels above. Read more on http://info.api.no/handbook/guidelines/GitHub-guidelines.html)-->
+
 # Omniauth::Aid
 
 This gem provides an OmniAuth strategy for using aID as an Oauth2-provider in your app.
