@@ -36,8 +36,10 @@ module OmniAuth
       end
 
       def raw_info
-        response_body = access_token.get('/api/mercury/v2/users/me').body
-        @raw_info ||= JSON.parse(response_body) || {}
+        @raw_info ||= begin
+          response_body = access_token.get('/api/mercury/v2/users/me').body
+          JSON.parse(response_body) || {}
+        end
       end
     end
   end
