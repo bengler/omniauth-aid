@@ -6,7 +6,7 @@ module OmniAuth
     # Class used to parse and return omniauth responses from aID
     class Aid < OmniAuth::Strategies::OAuth2
       option :name, :aid
-      option :authorize_options, [:scope]
+      option :authorize_options, [:scope, :stealth_mode]
 
       option :client_options,
              site: 'https://www.aid.no',
