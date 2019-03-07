@@ -19,5 +19,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_runtime_dependency 'omniauth-oauth2', '~> 1.3.1' # BUG https://github.com/intridea/omniauth-oauth2/issues/81
+  spec.add_runtime_dependency 'omniauth-oauth2', '>= 1.3.1' # BUG https://github.com/intridea/omniauth-oauth2/issues/81
 end
